@@ -23,7 +23,8 @@ footer .nav-list li:hover {
   color: #ff00ff;
 }
 
-footer .copyright {
-  font-size: 0.9rem;
+footer .copy-right {
+  font-size: 0.8rem;
   color: #aaa;
+  margin-top: 0.5rem;
 }

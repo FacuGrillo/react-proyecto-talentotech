@@ -18,13 +18,14 @@
 .product-list h3 {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
-  color: #0ff;
+  color: #9f0;
 }
 
 .product-list img {
   border-radius: 6px;
-  width: 150px;
-  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }

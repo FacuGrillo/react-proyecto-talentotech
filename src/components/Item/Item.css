@@ -2,12 +2,18 @@ h3 {
   margin-bottom: 0.5rem;
 }
 .product {
-  background-color: #1f1f1f;
-  border: 2px solid #00ff99;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* distribuye contenido */
+  width: 100%;
+  max-width: 400px; /* opcional, para uniformidad */
+  min-height: 350px; /* fuerza que todas midan lo mismo */
+  background: #111;
+  border: 2px solid #0f0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #0f0;
   padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .product:hover {
@@ -17,19 +23,27 @@ h3 {
 }
 
 .product img {
-  aspect-ratio: 3 / 4;   /* relación fija 150:200 */
-  width: 100%;           /* ocupa todo el ancho disponible del contenedor */
-  max-width: 150px;      /* límite en desktop */
-  height: auto;          /* se calcula automáticamente según la proporción */
-  object-fit: cover;     /* recorta manteniendo proporción */
+  aspect-ratio: 3 / 4;   
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem;
 }
 
+.product h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #9f0;
+  margin: 0.5rem 0;
+  min-height: 2.5rem; /* reserva espacio para títulos cortos/largos */
+}
 
-.price {
-  font-weight: bold;
-  color: #00ff99;
+.product .price {
+  font-size: 1rem;
+  color: #f0f;
+  margin-top: auto; /* empuja el precio al fondo */
 }
 
 /* En móviles, glow violeta permanente */

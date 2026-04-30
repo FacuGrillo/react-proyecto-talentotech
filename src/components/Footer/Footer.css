@@ -1,30 +1,36 @@
 footer {
-  background-color: #1f1f1f;
-  padding: 1rem;
+  background: #111;
+  border-top: 2px solid #0f0;
+  padding: 1.5rem;
   text-align: center;
-  border-top: 2px solid #00ff99;
+  box-shadow: 0 -5px 15px #0f0;
 }
 
-footer .nav-list {
+.nav-list {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin-bottom: 0.5rem;
+  gap: 2rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
 }
 
-footer .nav-list li {
-  color: #00ff99;
-  cursor: pointer;
-  transition: color 0.3s;
+.nav-list li a {
+  font-family: "Press Start 2P", cursive;
+  color: #0f0;
+  text-decoration: none;
+  text-shadow: 0 0 8px #0f0;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-footer .nav-list li:hover {
-  color: #ff00ff;
+.nav-list li a:hover {
+  color: #f0f;
+  text-shadow: 0 0 12px #f0f;
 }
 
-footer .copy-right {
+.copy-right {
   font-size: 0.8rem;
-  color: #aaa;
-  margin-top: 0.5rem;
+  color: #888;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 1rem;
 }

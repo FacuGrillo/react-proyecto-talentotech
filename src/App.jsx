@@ -1,7 +1,7 @@
 import "./App.css";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
-import { ItemListContainer } from "./components/Items/ItemListContainer";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { Count } from "./components/Count/Count";
 
 function App() {

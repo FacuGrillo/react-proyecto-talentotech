@@ -4,7 +4,7 @@ export const Nav = () => {
   return (
     <nav>
         <ul className='nav-list'>
-            <li>Home</li>
+            <li>Inicio</li>
             <li>Carrito</li>
         </ul>
     </nav>

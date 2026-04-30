@@ -1,4 +1,31 @@
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #00ff99;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+
+nav .nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav .nav-list li {
+  cursor: pointer;
+  color: #00ff99;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav .nav-list li:hover {
+  color: #ff00ff;
 }

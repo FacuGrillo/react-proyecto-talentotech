@@ -1,9 +1,29 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #00ff99;
 }
 
-.copy-rights {
-  align-self: flex-start;
+footer .nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+footer .nav-list li {
+  color: #00ff99;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer .nav-list li:hover {
+  color: #ff00ff;
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+  color: #aaa;
 }

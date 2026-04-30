@@ -1,0 +1,23 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+  gap: 2rem;
+  width: 100%;          /* ocupa todo el ancho disponible */
+  max-width: 1200px;    /* límite opcional para centrar en desktop */
+  margin: 0 auto;       /* centra el grid dentro del section */
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    justify-items: center; /* centra los productos en la columna */
+  }
+}

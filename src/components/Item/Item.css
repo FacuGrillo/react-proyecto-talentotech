@@ -1,0 +1,46 @@
+h3 {
+  margin-bottom: 0.5rem;
+}
+.product {
+  background-color: #1f1f1f;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  border-color: #ff00ff;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.product img {
+  aspect-ratio: 3 / 4;   /* relación fija 150:200 */
+  width: 100%;           /* ocupa todo el ancho disponible del contenedor */
+  max-width: 150px;      /* límite en desktop */
+  height: auto;          /* se calcula automáticamente según la proporción */
+  object-fit: cover;     /* recorta manteniendo proporción */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* En móviles, glow violeta permanente */
+@media (max-width: 600px) {
+  .product {
+    box-shadow: 0 0 15px #ff00ff;
+    border-color: #ff00ff;
+  }
+
+  .product img {
+    max-width: 100%; /* imagen ocupa todo el ancho en móvil */
+  }
+}

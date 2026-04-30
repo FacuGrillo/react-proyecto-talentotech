@@ -1,6 +1,8 @@
 import "./Footer.css";
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer>
       <nav>
@@ -9,7 +11,7 @@ export const Footer = () => {
           <li>Instagram</li>
         </ul>
       </nav>
-      <p className="copy-rights">&copy; 2026 My App. All rights reserved.</p>
+      <p className="copy-rights">&copy; {year} My App. All rights reserved.</p>
     </footer>
   );
 };

@@ -7,7 +7,7 @@ export const ItemList = ({ items }) => {
     <div className="products-container">
       {items.map((item) => (
         <Link to={`/product/${item.id}`} key={item.id}>
-          <Item {...item} />
+          <Item {...item} showDescription={false} wrapperClass="product-list" />
         </Link>
       ))}
     </div>

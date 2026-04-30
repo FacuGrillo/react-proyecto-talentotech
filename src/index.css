@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000; /* opcional: fondo negro retro */
+  color: #fff; /* texto blanco por defecto */
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #121212;
-  color: #eaeaea;
-  font-family: system-ui, sans-serif;
 }
 
 #root {

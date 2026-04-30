@@ -4,41 +4,41 @@
     "name": "Horizon Forbidden West",
     "description": "Aventura de mundo abierto con combates dinámicos y una historia épica en un paisaje postapocalíptico.",
     "price": 79.99,
-    "image": "images/horizon-forbidden-west.png"
+    "image": "/images/horizon-forbidden-west.png"
   },
   {
     "id": 2,
     "name": "FC26",
     "description": "Simulación de fútbol moderna con los mejores clubes y jugadores, ideal para competir en línea y en solitario.",
     "price": 69.99,
-    "image": "images/fc26.png"
+    "image": "/images/fc26.png"
   },
   {
     "id": 3,
     "name": "Resident Evil Requiem",
     "description": "Terror de supervivencia con monstruos intensos, puzzles desafiantes y una atmósfera inquietante.",
     "price": 74.99,
-    "image": "images/resident-evil-requiem.png"
+    "image": "/images/resident-evil-requiem.png"
   },
   {
     "id": 4,
     "name": "GTA V",
     "description": "Clásico de mundo abierto con misiones criminales, conducción, y un modo online lleno de acción.",
     "price": 59.99,
-    "image": "images/gta-v.png"
+    "image": "/images/gta-v.png"
   },
   {
     "id": 5,
     "name": "Borderlands 4",
     "description": "Looter shooter explosivo con personajes carismáticos, armas únicas y acción cooperativa frenética.",
     "price": 69.99,
-    "image": "images/borderlands-4.png"
+    "image": "/images/borderlands-4.png"
   },
   {
     "id": 6,
     "name": "Marvel's Spider-Man 2",
     "description": "Aventura superheroica en la ciudad de Nueva York con combate fluido y una historia emocionante.",
     "price": 79.99,
-    "image": "images/marvels-spider-man-2.png"
+    "image": "/images/marvels-spider-man-2.png"
   }
 ]

@@ -1,23 +1,55 @@
 .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
-  gap: 2rem;
-  width: 100%;          /* ocupa todo el ancho disponible */
-  max-width: 1200px;    /* límite opcional para centrar en desktop */
-  margin: 0 auto;       /* centra el grid dentro del section */
+  grid-template-columns: repeat(3, 1fr); /* máximo 3 productos por fila */
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-/* Tablets */
+/* Estilos específicos para los productos del listado */
+.product-list {
+  background-color: #111;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-list h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #0ff;
+}
+
+.product-list img {
+  border-radius: 6px;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.product-list .price {
+  font-size: 0.8rem;
+  color: #0f0;
+}
+
+.product-list:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #0f0;
+}
+
+/* Responsive: 2 columnas en tablet */
 @media (max-width: 1024px) {
   .products-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Móviles */
+/* Responsive: 1 columna en móvil */
 @media (max-width: 600px) {
   .products-container {
     grid-template-columns: 1fr;
-    justify-items: center; /* centra los productos en la columna */
+    justify-items: center;
   }
 }

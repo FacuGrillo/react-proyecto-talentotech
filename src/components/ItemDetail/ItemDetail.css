@@ -71,7 +71,6 @@
   box-shadow: 0 0 15px #0f0;
 }
 
-/* Responsive: en mobile, imagen arriba y texto abajo */
 @media (max-width: 768px) {
   .product-detail {
     grid-template-columns: 1fr;

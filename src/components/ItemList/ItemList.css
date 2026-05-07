@@ -1,11 +1,10 @@
 .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* máximo 3 productos por fila */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 1rem;
 }
 
-/* Estilos específicos para los productos del listado */
 .product-list {
   background-color: #111;
   border: 2px solid #333;
@@ -40,14 +39,12 @@
   box-shadow: 0 0 12px #0f0;
 }
 
-/* Responsive: 2 columnas en tablet */
 @media (max-width: 1024px) {
   .products-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive: 1 columna en móvil */
 @media (max-width: 600px) {
   .products-container {
     grid-template-columns: 1fr;

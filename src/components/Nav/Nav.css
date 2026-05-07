@@ -4,9 +4,9 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* permite que los ítems bajen en móvil */
-  max-width: 100%; /* nunca más ancho que la pantalla */
-  box-sizing: border-box; /* incluye padding en el ancho */
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -28,10 +28,9 @@ nav li:hover {
   color: #ff00ff;
 }
 
-/* En móviles, el nav se adapta */
 @media (max-width: 600px) {
   nav {
-    flex-direction: column; /* ítems uno debajo del otro */
+    flex-direction: column;
     align-items: center;
   }
 

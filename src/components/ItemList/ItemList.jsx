@@ -3,6 +3,10 @@ import { Item } from "../Item/Item";
 import { Link } from "react-router-dom";
 
 export const ItemList = ({ items }) => {
+  if (!items.length) {
+    return <p>No hay productos disponibles.</p>;
+  }
+
   return (
     <div className="products-container">
       {items.map((item) => (

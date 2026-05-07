@@ -6,6 +6,7 @@ export const ItemDetailContainer = () => {
   const { id } = useParams();
   const [itemDetail, setItemDetail] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("/data/products.json")

@@ -12,7 +12,9 @@ export const ItemDetail = ({ item }) => {
         <h3>{item.name}</h3>
         <p>{item.description}</p>
         <span className="price">${item.price}</span>
-        <button onClick={() => addToCart(item)}>Agregar al carrito</button>
+        <div className="item-actions">
+          <button onClick={() => addToCart(item)}>Agregar al carrito</button>
+        </div>
       </div>
     </div>
   );

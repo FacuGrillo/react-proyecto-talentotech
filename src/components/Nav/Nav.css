@@ -1,3 +1,6 @@
+/* Nav.css */
+
+/* Contenedor del nav */
 nav {
   background-color: #1f1f1f;
   border-bottom: 2px solid #00ff99;
@@ -9,6 +12,7 @@ nav {
   box-sizing: border-box;
 }
 
+/* Lista de navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -16,18 +20,37 @@ nav ul {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  font-family: 'Press Start 2P', cursive;
 }
 
-nav li {
+nav li a {
+  text-decoration: none;
   color: #00ff99;
-  cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 6px #8a2be2, 0 0 10px #39ff14;
 }
 
-nav li:hover {
+nav li a:hover {
   color: #ff00ff;
+  text-shadow: 0 0 12px #ff00ff;
 }
 
+/* Badge contador del carrito */
+.cart-count {
+  background-color: #39ff14; /* verde neón */
+  color: black;
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-left: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: 0 0 8px #39ff14, 0 0 12px #8a2be2;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Responsive en móviles */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;

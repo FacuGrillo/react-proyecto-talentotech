@@ -1,0 +1,128 @@
+/* Cart.css */
+
+/* Título cuando el carrito está vacío */
+.empty-cart-title {
+  color: #0f0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #8a2be2, 0 0 12px #0f0;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.cart-container {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Título dentro del carrito */
+.cart-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0f0;
+  text-shadow: 0 0 8px #8a2be2, 0 0 12px #0f0;
+}
+
+/* Lista de productos */
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.cart-list li {
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid #8a2be2; /* violeta neón */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #8a2be2;
+  transition: transform 0.2s ease;
+}
+
+.cart-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #0f0; /* verde neón */
+  border-color: #0f0;
+}
+
+/* Botones dentro de la lista */
+.cart-list button {
+  background-color: #8a2be2; /* violeta neón */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Press Start 2P', cursive; /* tipografía retro */
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #8a2be2;
+}
+
+.cart-list button:hover {
+  background-color: #0f0; /* verde neón */
+  color: black;
+  box-shadow: 0 0 12px #0f0;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(30, 30, 30, 0.95);
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 12px #8a2be2;
+}
+
+.cart-summary p {
+  margin: 10px 0;
+  font-size: 1rem;
+  text-shadow: 0 0 6px #0f0;
+}
+
+/* Botones de acción */
+.cart-summary button {
+  margin: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Press Start 2P', cursive; /* tipografía retro */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Botón Vaciar carrito */
+.cart-summary button:first-of-type {
+  background-color: #8a2be2; /* violeta neón */
+  color: #fff;
+  box-shadow: 0 0 8px #8a2be2;
+}
+
+.cart-summary button:first-of-type:hover {
+  background-color: #0f0; /* verde neón */
+  color: black;
+  box-shadow: 0 0 12px #0f0;
+}
+
+/* Botón Finalizar compra */
+.cart-summary button:last-of-type {
+  background-color: #0f0; /* verde neón */
+  color: black;
+  box-shadow: 0 0 8px #0f0;
+}
+
+.cart-summary button:last-of-type:hover {
+  background-color: #8a2be2; /* violeta neón */
+  color: #fff;
+  box-shadow: 0 0 12px #8a2be2;
+}

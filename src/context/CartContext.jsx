@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { createContext, useContext, useState } from "react";
 
 const cartContext = createContext();
@@ -37,6 +37,7 @@ export const CartProvider = ({ children }) => {
       return;
     }
     setCart([...cart, item]);
+    navigate("/");
     alert("Producto agregado al carrito 🛒");
   };
   /* -------------------------- Eliminar del carrito -------------------------- */
@@ -53,7 +54,7 @@ export const CartProvider = ({ children }) => {
   };
 
   /* -------------------- Total de productos en el carrito -------------------- */
-  const getTotalProdutsInCart = () => {
+  const getTotalProductsInCart = () => {
     return cart.length;
   };
 
@@ -68,14 +69,15 @@ export const CartProvider = ({ children }) => {
   const checkout = () => {
     alert("Gracias por tu compra! 🛒");
     clearCart();
-    Navigate("/");
+    navigate("/");
   };
 
   const values = {
+    cart,
     addToCart,
     clearCart,
     removeFromCart,
-    getTotalProdutsInCart,
+    getTotalProductsInCart,
     getTotalToPay,
     checkout,
   };

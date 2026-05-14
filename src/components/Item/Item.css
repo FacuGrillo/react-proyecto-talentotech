@@ -1,6 +1,7 @@
 h3 {
   margin-bottom: 0.5rem;
 }
+
 .product {
   display: flex;
   flex-direction: column;
@@ -18,8 +19,8 @@ h3 {
 
 .product:hover {
   transform: scale(1.05);
-  border-color: #ff00ff;
-  box-shadow: 0 0 15px #ff00ff;
+  border-color: #8a2be2;
+  box-shadow: 0 0 15px #8a2be2;
 }
 
 .product img {
@@ -35,22 +36,49 @@ h3 {
 .product h3 {
   font-size: 1rem;
   text-align: center;
-  color: #9f0;
+  color: #0f0;
   margin: 0.5rem 0;
   min-height: 2.5rem;
 }
 
 .product .price {
   font-size: 1rem;
-  color: #f0f;
+  color: #8a2be2;
   margin-top: auto;
+}
+
+/* Contenedor de acciones dentro de la card */
+.item-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Botones dentro de item-actions */
+.item-actions button {
+  background-color: #8a2be2;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #8a2be2;
+}
+
+.item-actions button:hover {
+  background-color: #0f0;
+  color: black;
+  box-shadow: 0 0 12px #0f0;
 }
 
 /* En móviles, glow violeta permanente */
 @media (max-width: 600px) {
   .product {
-    box-shadow: 0 0 15px #ff00ff;
-    border-color: #ff00ff;
+    box-shadow: 0 0 15px #8a2be2;
+    border-color: #8a2be2;
   }
 
   .product img {

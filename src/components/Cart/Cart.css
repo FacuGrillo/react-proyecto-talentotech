@@ -30,7 +30,7 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .cart-list li {
@@ -40,8 +40,9 @@
   margin-bottom: 15px;
   padding: 12px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   box-shadow: 0 0 10px #8a2be2;
   transition: transform 0.2s ease;
 }
@@ -52,22 +53,41 @@
   border-color: #0f0;
 }
 
+/* Imagen dentro del carrito */
+.cart-list img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #0f0;
+}
+
+/* Nombre y precio */
+.cart-list span {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-list .price {
+  color: #8a2be2; /* violeta neón */
+  font-weight: bold;
+}
+
 /* Botones dentro de la lista */
-.cart-list button {
+.item-actions button {
   background-color: #8a2be2; /* violeta neón */
   color: #fff;
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
-  font-family: 'Press Start 2P', cursive; /* tipografía retro */
+  font-family: 'Press Start 2P', cursive;
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 0 8px #8a2be2;
 }
 
-.cart-list button:hover {
+.item-actions button:hover {
   background-color: #0f0; /* verde neón */
-  color: black;
+  color: #111;
   box-shadow: 0 0 12px #0f0;
 }
 
@@ -96,7 +116,7 @@
   padding: 8px 16px;
   border-radius: 8px;
   border: none;
-  font-family: 'Press Start 2P', cursive; /* tipografía retro */
+  font-family: 'Press Start 2P', cursive;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -110,14 +130,14 @@
 
 .cart-summary button:first-of-type:hover {
   background-color: #0f0; /* verde neón */
-  color: black;
+  color: #111;
   box-shadow: 0 0 12px #0f0;
 }
 
 /* Botón Finalizar compra */
 .cart-summary button:last-of-type {
   background-color: #0f0; /* verde neón */
-  color: black;
+  color: #111;
   box-shadow: 0 0 8px #0f0;
 }
 

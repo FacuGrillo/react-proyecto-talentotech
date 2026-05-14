@@ -1,4 +1,3 @@
-import { Item } from "../Item/Item";
 import { useCart } from "../../context/CartContext";
 import "./Cart.css";
 
@@ -22,11 +21,12 @@ export const Cart = () => {
       <ul className="cart-list">
         {cart.map((item) => (
           <li key={item.id}>
-            <Item {...item}>
-              <div className="item-actions">
-                <button onClick={() => removeFromCart(item.id)}>Eliminar</button>
-              </div>
-            </Item>
+            <img src={item.image} alt={item.name} />
+            <span>{item.name}</span>
+            <span className="price">${item.price}</span>
+            <div className="item-actions">
+              <button onClick={() => removeFromCart(item.id)}>Eliminar</button>
+            </div>
           </li>
         ))}
       </ul>

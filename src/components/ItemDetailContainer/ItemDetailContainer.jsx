@@ -29,7 +29,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <section>
-      <h1>Detalles del producto</h1>
+      <h1>Disponible para PS4 y PS5</h1>
       <div className="detail-container">
         <ItemDetail item={itemDetail} />
       </div>

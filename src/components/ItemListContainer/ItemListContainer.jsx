@@ -25,7 +25,7 @@ export const ItemListContainer = ({ title }) => {
   return (
     <section>
       <h1>Juegos PS5</h1>
-      <p>Los mejores juegos para tu PlayStation 5</p>
+      <p>Los mejores juegos para tu PS4 y PS5</p>
       <div className="list-container">
         <ItemList items={products} />
       </div>

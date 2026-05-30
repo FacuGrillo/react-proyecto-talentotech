@@ -5,7 +5,7 @@ export const CartItem = ({ item }) => {
   const { cart, removeFromCart } = useCart();
 
   return (
-    <li key={item.id}>
+    <li>
       <img src={item.image} alt={item.name} />
       <span>{item.name}</span>
       <span className="price">${item.price}</span>

@@ -1,7 +1,6 @@
 import { useCart } from "../../context/CartContext";
 import { CartList } from "./CartList";
 import { CartSummary } from "./CartSummary";
-import { Link } from "react-router-dom";
 
 import "./Cart.css";
 
@@ -18,9 +17,11 @@ export const CartView = () => {
           <CartSummary />
         </>
       ) : (
-        <h2 className="empty-cart-title">Tu carrito está vacío 😢</h2>
+        <div className="cart-empty">
+          <h2 className="empty-cart-title">Tu carrito está vacío 😢</h2>
+          <button onClick={() => (window.location.href = "/")}>Volver a la tienda</button>
+        </div>
       )}
-      <Link to={"/"}>Seguir comprando</Link>
     </section>
   );
 };

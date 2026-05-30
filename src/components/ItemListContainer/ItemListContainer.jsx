@@ -1,6 +1,7 @@
 import "./ItemListContainer.css";
 import { ItemList } from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
+import { getProducts } from "../../services/productsService";
 
 export const ItemListContainer = ({ title }) => {
   const [products, setProducts] = useState([]);
@@ -8,12 +9,12 @@ export const ItemListContainer = ({ title }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-  fetch("/data/products.json")
-    .then((response) => response.json())
-    .then((data) => setProducts(data))
-    .catch((error) => console.error("Error fetching products:", error))
-    .finally(() => setLoading(false));
-}, []);
+    setLoading(true);
+    getProducts()
+      .then((data) => setProducts(data))
+      .catch((error) => console.log("Error fetching products:", error))
+      .finally(() => setLoading(false));
+  }, []);
 
   if (loading) {
     return <p>Cargando productos...</p>;

@@ -61,7 +61,8 @@ export const CartProvider = ({ children }) => {
   /* ------------------------------ Total a pagar ----------------------------- */
 
   const getTotalToPay = () => {
-    return cart.reduce((acc, element) => acc + element.price, 0);
+    const total = cart.reduce((acc, element) => acc + element.price, 0);
+  return total.toFixed(2);
   };
 
   /* -------------------------------- Checkout -------------------------------- */

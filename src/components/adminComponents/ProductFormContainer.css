@@ -1,0 +1,201 @@
+/* ---------- Formulario de producto ---------- */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+form {
+  background: #1a1a1d; /* fondo oscuro gamer */
+  border: 2px solid #39ff14; /* verde neón */
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px #8a2be2; /* violeta glow */
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #39ff14;
+  text-shadow: 0 0 8px #8a2be2;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #8a2be2;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+  background: #0d0d0f;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8a2be2;
+  box-shadow: 0 0 8px #8a2be2;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Botones del formulario */
+form button {
+  width: 100%; /* solo los botones del formulario ocupan ancho completo */
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  color: #fff;
+  font-weight: bold;
+  font-family: "Press Start 2P", sans-serif; /* 👈 fuente gamer */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #39ff14;
+}
+
+form button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+/* ---------- Ajustes para inputs especiales ---------- */
+
+/* Input de precio: quitar flechitas clásicas */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Input de archivo: personalizar botón */
+input[type="file"] {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #39ff14;
+}
+
+/* Firefox y otros navegadores */
+input[type="file"]::file-selector-button {
+  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #39ff14;
+}
+
+/* ---------- Pantalla de éxito ---------- */
+.success-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #39ff14;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #8a2be2;
+}
+
+.success-container h2 {
+  color: #39ff14;
+  margin-bottom: 1rem;
+}
+
+.success-container p {
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.success-container button {
+  display: inline-block;   /* se ajusta al contenido */
+  width: auto;             /* no ocupa todo el ancho */
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif; /* 👈 fuente gamer */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.success-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #39ff14;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea,
+  form button {
+    font-size: 0.85rem;
+  }
+}

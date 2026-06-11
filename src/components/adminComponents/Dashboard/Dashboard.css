@@ -1,0 +1,120 @@
+/* Dashboard.css */
+
+.dashboard {
+  background-color: #1e1e2f;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.header-actions .button-primary {
+  background-color: #3a7bd5;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.header-actions .button-primary:hover {
+  background-color: #2a5fa0;
+}
+
+.dashboard-actions {
+  margin-bottom: 2rem;
+}
+
+.dashboard-actions h3 {
+  margin-bottom: 1rem;
+  color: #b0b0b0;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.action-card,
+.action-card-disabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card {
+  background-color: #2e2e3f;
+  color: #3a7bd5;
+  border: 1px solid #3a7bd5;
+  cursor: pointer;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
+}
+
+.action-card-disabled {
+  background-color: #2e2e3f;
+  color: #777;
+  border: 1px solid #444;
+  cursor: not-allowed;
+}
+
+.dashboard-help {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #252535;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.dashboard-help h3 {
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.dashboard-help p {
+  color: #b0b0b0;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+}

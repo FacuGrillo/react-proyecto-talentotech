@@ -18,9 +18,9 @@ export const Login = () => {
     setLoading(true);
     try {
       await login(email, password);
-      navigate("/admin/dashboard");
+      navigate("/admin", {replace: true});
     } catch (err) {
-      setError("Credenciales inválidas o error de conexión.");
+      setError("Nombre de usuario o contraseña incorrectos.");
     } finally {
       setLoading(false);
     }

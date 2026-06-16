@@ -1,3 +1,5 @@
+/* ProductFormContainer.css - estilo corporativo */
+
 section {
   display: flex;
   justify-content: center;
@@ -6,22 +8,22 @@ section {
 }
 
 form {
-  background: #1a1a1d;
-  border: 2px solid #39ff14;
-  border-radius: 12px;
+  background: #252535; /* igual que login/dashboard */
+  border: 1px solid #333;
+  border-radius: 8px;
   padding: 2rem;
   width: 100%;
   max-width: 500px;
-  box-shadow: 0 0 20px #8a2be2;
-  color: #fff;
-  font-family: "Press Start 2P", sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #39ff14;
-  text-shadow: 0 0 8px #8a2be2;
+  color: #ffffff;
+  font-size: 1.4rem;
 }
 
 form div {
@@ -33,15 +35,15 @@ form div {
 label {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: #8a2be2;
+  color: #b0b0b0;
 }
 
 input,
 textarea {
   padding: 0.6rem;
-  border: 1px solid #39ff14;
-  border-radius: 8px;
-  background: #0d0d0f;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2e2e3f;
   color: #fff;
   font-size: 0.95rem;
 }
@@ -49,8 +51,8 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #8a2be2;
-  box-shadow: 0 0 8px #8a2be2;
+  border-color: #3a7bd5;
+  box-shadow: 0 0 6px rgba(58, 123, 213, 0.6);
 }
 
 textarea {
@@ -62,20 +64,19 @@ form button {
   width: 100%;
   padding: 0.8rem;
   border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  border-radius: 6px;
+  background-color: #3a7bd5; /* azul corporativo */
   color: #fff;
-  font-weight: bold;
-  font-family: "Press Start 2P", sans-serif;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 form button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #39ff14;
+  background-color: #2a5fa0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
 }
 
 form button:disabled {
@@ -89,6 +90,7 @@ form button:disabled {
   margin-top: 0.3rem;
 }
 
+/* Inputs especiales */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -105,42 +107,26 @@ input[type="file"] {
   font-size: 0.9rem;
 }
 
+input[type="file"]::file-selector-button,
 input[type="file"]::-webkit-file-upload-button {
-  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  background-color: #3a7bd5;
   border: none;
   border-radius: 6px;
   color: #fff;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+input[type="file"]::file-selector-button:hover,
 input[type="file"]::-webkit-file-upload-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 8px #39ff14;
+  background-color: #2a5fa0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
 }
 
-input[type="file"]::file-selector-button {
-  background: linear-gradient(90deg, #39ff14, #8a2be2);
-  border: none;
-  border-radius: 6px;
-  color: #fff;
-  font-family: "Press Start 2P", sans-serif;
-  padding: 0.4rem 0.8rem;
-  cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-input[type="file"]::file-selector-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 8px #39ff14;
-}
-
+/* Pantalla de éxito */
 .success-container {
   text-align: center;
   padding: 2rem;
@@ -148,19 +134,18 @@ input[type="file"]::file-selector-button:hover {
 
 .success-icon {
   font-size: 3rem;
-  color: #39ff14;
+  color: #3a7bd5;
   margin-bottom: 1rem;
-  text-shadow: 0 0 8px #8a2be2;
 }
 
 .success-container h2 {
-  color: #39ff14;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .success-container p {
   margin-bottom: 1rem;
-  color: #ddd;
+  color: #b0b0b0;
 }
 
 .success-container button {
@@ -168,21 +153,21 @@ input[type="file"]::file-selector-button:hover {
   width: auto;
   padding: 0.6rem 1.2rem;
   border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #39ff14, #8a2be2);
+  border-radius: 6px;
+  background-color: #3a7bd5;
   color: #fff;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .success-container button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #39ff14;
+  background-color: #2a5fa0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   form {
     padding: 1.5rem;
